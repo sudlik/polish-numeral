@@ -9,7 +9,7 @@ use Exception\WordDoesNotExists;
 class Converter
 {
     const MIN_SUPPORTED_VALUE   = 0;
-    const MAX_SUPPORTED_VALUE   = 2147483647;
+    const MAX_SUPPORTED_VALUE   = 9999999999999999999;
     const WORD_SEPARATOR        = ' ';
 
     private static $SUFFIXES = [
@@ -91,7 +91,7 @@ class Converter
 
     private function isInRange($number)
     {
-        return $number >= self::MIN_SUPPORTED_VALUE && $number <= self::MAX_SUPPORTED_VALUE;
+        return $number >= self::MIN_SUPPORTED_VALUE && $number <= self::MAX_SUPPORTED_VALUE && $number <= PHP_INT_MAX;
     }
 
     public function getNumber()
