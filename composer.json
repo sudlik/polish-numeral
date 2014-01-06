@@ -1,0 +1,14 @@
+{
+    "name"      : "sudlik/polish-numeral",
+    "autoload": {
+        "psr-0": {
+            "": "src/sudlik/polish-numeral/"
+        }
+    },
+    "authors"   : [
+        {
+            "name"  : "Marek 'Sudlik' Sudoł",
+            "email" : "sudlik@sudlik.pl"
+        }
+    ]
+}
